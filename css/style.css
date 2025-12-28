@@ -5,15 +5,27 @@
 :root{
     --accent-color : #b1fa63;
     --bg-gray : #212121;
+    --green  : #008c6c;
 }
 .text-accent{
     color: var(--accent-color) !important;
+}
+.text-gradient {
+  /* font-size: 72px; */
+  background: -webkit-linear-gradient(to right, #eee, var(--accent-color));
+  background: linear-gradient(to right, #eee, var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block; 
 }
 .bg-accent{
     background-color: var(--accent-color) !important;
 }
 .border-accent{
     border-color: var(--accent-color) !important;
+}
+.bg-green{
+    background-color: var(--green) !important;
 }
 .bg-gary{
     background-color: var(--bg-gray) !important;
@@ -30,11 +42,11 @@ html,body{
 }
 .line-nav{
     height: 15px;
-    width: 4px;
+    width: 2px;
     background:#ffffff80;
 }
 .nav-img-logo{
-    height: 60px;
+    height: 50px;
     transform: translate(-50%,-50%);
 }
 .nav-img-menu{
@@ -96,4 +108,31 @@ html,body{
 .services-section ul::-webkit-scrollbar-thumb {
     background-color: white;
     border-radius: 10px;
+}
+.hero-section h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 500;
+}
+.svg-holder{
+    background: url("../assets/images/image.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 240px;
+    height: 260px;
+}
+.service-card-marque{
+    font-size: 70px;
+}
+.marque-section .marque-holder{
+    /* height: 150px; */
+    font-size: 50px;
+}
+.marque-section .marque-holder div{
+    height: 172px;
+    min-width: 325px;
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
 }
