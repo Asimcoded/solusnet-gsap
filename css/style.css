@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "SequelSans";
+    src: url(../assets/fonts/Sequel\ Sans\ Medium\ Disp.ttf);
+}
+:root{
+    --accent-color : #b1fa63;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "SequelSans";
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.line-nav{
+    height: 15px;
+    width: 4px;
+    background:#ffffff80;
+}
+.nav-img-logo{
+    height: 60px;
+    transform: translate(-50%,-50%);
+}
+.nav-img-menu{
+    height: 40px;
+    width: 40px;
+}
+.menu{
+    background: #ffffff0f;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+
+.marque-holder{
+    /* rotate: 270deg;  */
+    /* height: 100px; */
+    overflow:hidden;
+    white-space: nowrap;
+}
+.marque{
+    width: fit-content;
+    font-size: 80px;
+    font-weight: 600;
+    padding: 20px;
+    writing-mode: sideways-lr;
+}
+.link-list-holder{
+        max-width: 1000px;
+
+}
+.link-list-holder .top-section .nav-img-logo{
+    height: 50px;
+    transform: translate(0,0);
+}
